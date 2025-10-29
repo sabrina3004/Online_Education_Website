@@ -25,6 +25,7 @@ html{
 }
 body{
   background: #333;
+  height: 3000px;
 }
 header{
   width: 96%;
@@ -38,8 +39,14 @@ header{
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 1000;
+  transition: .2s;
 }
-
+.header-active{
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 .1rem .3rem rgb(0, 0, 0, .3);
+}
 header .navbar ul{
   display: flex;
   align-items: center;
@@ -114,6 +121,10 @@ header .fa-times{
   header .navbar ul li a{
     font-size: 3rem;
     display: block;
+  }
+  header .nav-toggle{
+    top: 5.5rem;
+    opacity: 1;
   }
 }
 
